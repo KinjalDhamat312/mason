@@ -1,6 +1,8 @@
-part of '{{name}}_bloc.dart';
+part of '{{name.snakeCase()}}_bloc.dart';
 
-@freezed
-class {{name.pascalCase()}}State with _${{name.pascalCase()}}State {
-const factory {{name.pascalCase()}}State.initial() = _Initial;
+class {{name.pascalCase()}}State extends Equatable {
+const {{name.pascalCase()}}State();
+
+@override
+List<Object> get props => [];
 }

@@ -4,3 +4,5 @@
 bricks:
   clean_architecture_bloc:
     path: ./clean_architecture_bloc
+  clean_architecture_bloc_freezed:
+    path: ./clean_architecture_bloc_freezed

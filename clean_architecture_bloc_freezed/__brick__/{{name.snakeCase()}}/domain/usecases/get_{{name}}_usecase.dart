@@ -13,7 +13,7 @@ class Get{{name.pascalCase()}}UseCase extends UseCase<String, String> {
       // Todo replace with logic
       return Future.value(const Right(""));
     } catch (e) {
-      return Future.value(Left(UnknownFailure("")));
+      return Future.value(const Left(Exception("")));
     }
   }
 }

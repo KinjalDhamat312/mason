@@ -1,14 +1,17 @@
+import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:equatable/equatable.dart';
+import 'package:injectable/injectable.dart';
 
-part '{{name}}_event.dart';
-part '{{name}}_state.dart';
-part '{{name}}_bloc.freezed.dart';
+part '{{name.snakeCase()}}_event.dart';
+part '{{name.snakeCase()}}_state.dart';
 
+@injectable
 class {{name.pascalCase()}}Bloc extends Bloc<{{name.pascalCase()}}Event, {{name.pascalCase()}}State> {
-    {{name.pascalCase()}}Bloc() : super(const {{name.pascalCase()}}State.initial()) {
-        on<{{name.pascalCase()}}Event>((event, emit) {
-        // TODO: implement event handler
-        });
-    }
+{{name.pascalCase()}}Bloc() : super(const {{name.pascalCase()}}State()) {
+      on<{{name.pascalCase()}}Event>(_{{name.camelCase()}}Event);
+}
+
+FutureOr<void> _{{name.camelCase()}}Event({{name.pascalCase()}}Event event, Emitter emit) {}
+
 }

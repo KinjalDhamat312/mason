@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../injection/injection.dart';
+import 'package:flutter_starter/injection/injection.dart';
 import '../bloc/{{name}}_bloc.dart';
 
 class {{name.pascalCase()}}Screen extends StatelessWidget {
