@@ -6,3 +6,5 @@ bricks:
     path: ./clean_architecture_bloc
   clean_architecture_bloc_freezed:
     path: ./clean_architecture_bloc_freezed
+  presentation_bloc:
+    path: ./presentation_bloc
